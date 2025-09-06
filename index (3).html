@@ -1,0 +1,766 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Bella Syahira - E-commerce Jahit Elegan
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;family=Poppins&amp;family=Quicksand&amp;family=Raleway&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', 'Quicksand', 'Raleway', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800 min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <nav class="bg-gradient-to-r from-pink-200 via-pink-300 to-pink-200 shadow-md sticky top-0 z-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <a class="text-3xl font-playfair text-rose-600 font-semibold tracking-wide" href="#home">
+      Bella Syahira
+     </a>
+     <div class="hidden md:flex space-x-8 font-semibold text-pink-700">
+      <a class="hover:text-rose-600 transition" href="#home">
+       Beranda
+      </a>
+      <a class="hover:text-rose-600 transition" href="#shop">
+       Produk
+      </a>
+      <a class="hover:text-rose-600 transition" href="#about">
+       Tentang Kami
+      </a>
+      <a class="hover:text-rose-600 transition" href="#blog">
+       Blog
+      </a>
+      <a class="hover:text-rose-600 transition" href="#contact">
+       Kontak
+      </a>
+     </div>
+     <div class="md:hidden">
+      <button aria-label="Toggle menu" class="text-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-400" id="menu-btn">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-pink-50" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-pink-200 text-rose-600 font-semibold hover:bg-pink-100" href="#home">
+     Beranda
+    </a>
+    <a class="block px-4 py-3 border-b border-pink-200 text-rose-600 font-semibold hover:bg-pink-100" href="#shop">
+     Produk
+    </a>
+    <a class="block px-4 py-3 border-b border-pink-200 text-rose-600 font-semibold hover:bg-pink-100" href="#about">
+     Tentang Kami
+    </a>
+    <a class="block px-4 py-3 border-b border-pink-200 text-rose-600 font-semibold hover:bg-pink-100" href="#blog">
+     Blog
+    </a>
+    <a class="block px-4 py-3 text-rose-600 font-semibold hover:bg-pink-100" href="#contact">
+     Kontak
+    </a>
+   </div>
+  </nav>
+  <main class="flex-grow">
+   <!-- Hero Banner -->
+   <section class="relative bg-pink-50" id="home">
+    <div class="max-w-7xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-10">
+     <div class="md:w-1/2 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-playfair font-bold text-rose-600 mb-6 leading-tight">
+       Temukan Jahitan Impianmu dengan Sentuhan Pink
+      </h1>
+      <p class="text-pink-700 text-lg mb-8 max-w-md mx-auto md:mx-0">
+       Produk jahit berkualitas tinggi dengan desain elegan dan feminin, khusus untuk perempuan muda yang ingin tampil percaya diri.
+      </p>
+      <a class="inline-block bg-gradient-to-r from-rose-400 to-pink-400 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1" href="#shop">
+       Belanja Sekarang
+      </a>
+     </div>
+     <div class="md:w-1/2">
+      <img alt="Model baju elegan berwarna pink dengan latar mewah rose gold dan aksen feminin" class="rounded-xl shadow-lg mx-auto max-w-full" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/aeacf771-6594-463b-e920-1334f67b2c94.jpg" width="600"/>
+     </div>
+    </div>
+   </section>
+   <!-- Kategori Produk -->
+   <section class="max-w-7xl mx-auto px-6 py-16" id="categories">
+    <h2 class="text-3xl font-playfair font-bold text-rose-600 mb-10 text-center">
+     Kategori Produk
+    </h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+     <a class="group flex flex-col items-center bg-pink-50 rounded-xl p-6 shadow-md hover:shadow-xl transition cursor-pointer" href="#shop">
+      <img alt="Kemeja elegan berwarna pink dengan detail rose gold, digantung di hanger kayu" class="w-24 h-24 object-cover rounded-full mb-4 group-hover:scale-110 transition-transform" height="150" loading="lazy" src="https://storage.googleapis.com/a1aa/image/da81558b-80cc-4649-ab1e-78afefe2ade2.jpg" width="150"/>
+      <span class="text-pink-700 font-semibold text-lg">
+       Kemeja
+      </span>
+     </a>
+     <a class="group flex flex-col items-center bg-pink-50 rounded-xl p-6 shadow-md hover:shadow-xl transition cursor-pointer" href="#shop">
+      <img alt="Gaun pengantin mewah berwarna dusty rose dengan aksen renda dan payet, digantung di ruang elegan" class="w-24 h-24 object-cover rounded-full mb-4 group-hover:scale-110 transition-transform" height="150" loading="lazy" src="https://storage.googleapis.com/a1aa/image/23cb74fc-3aee-4853-dbe1-df943ff22314.jpg" width="150"/>
+      <span class="text-pink-700 font-semibold text-lg">
+       Gaun Pengantin
+      </span>
+     </a>
+     <a class="group flex flex-col items-center bg-pink-50 rounded-xl p-6 shadow-md hover:shadow-xl transition cursor-pointer" href="#shop">
+      <img alt="Seragam kerja wanita berwarna pink soft dengan desain minimalis dan elegan, digantung di hanger" class="w-24 h-24 object-cover rounded-full mb-4 group-hover:scale-110 transition-transform" height="150" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9033b11c-6920-44f3-4da2-d3b341825e71.jpg" width="150"/>
+      <span class="text-pink-700 font-semibold text-lg">
+       Seragam
+      </span>
+     </a>
+     <a class="group flex flex-col items-center bg-pink-50 rounded-xl p-6 shadow-md hover:shadow-xl transition cursor-pointer" href="#shop">
+      <img alt="Celana wanita berwarna dusty rose dengan potongan modern dan bahan mewah, digantung di hanger" class="w-24 h-24 object-cover rounded-full mb-4 group-hover:scale-110 transition-transform" height="150" loading="lazy" src="https://storage.googleapis.com/a1aa/image/62bc4271-b8a1-4a35-ab0c-1e0de3dab6b8.jpg" width="150"/>
+      <span class="text-pink-700 font-semibold text-lg">
+       Celana
+      </span>
+     </a>
+     <a class="group flex flex-col items-center bg-pink-50 rounded-xl p-6 shadow-md hover:shadow-xl transition cursor-pointer" href="#shop">
+      <img alt="Rok wanita berwarna baby pink dengan desain flowy dan bahan mewah, digantung di hanger" class="w-24 h-24 object-cover rounded-full mb-4 group-hover:scale-110 transition-transform" height="150" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5466f65e-fc60-428a-097d-68fe336f74a2.jpg" width="150"/>
+      <span class="text-pink-700 font-semibold text-lg">
+       Rok Wanita
+      </span>
+     </a>
+    </div>
+   </section>
+   <!-- Promo Terbaru -->
+   <section class="bg-pink-50 py-16 px-6" id="promo">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+     <div class="md:w-1/2">
+      <img alt="Banner promo terbaru diskon 20 persen untuk semua produk berwarna pink dengan latar mewah dan aksen gold" class="rounded-xl shadow-lg mx-auto max-w-full" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/68782d59-f242-4d9b-2ee1-5389ca172dec.jpg" width="600"/>
+     </div>
+     <div class="md:w-1/2 text-center md:text-left">
+      <h2 class="text-3xl font-playfair font-bold text-rose-600 mb-4">
+       Promo Terbaru
+      </h2>
+      <p class="text-pink-700 mb-6 max-w-md mx-auto md:mx-0">
+       Nikmati diskon 20% untuk semua produk berwarna pink selama bulan ini. Jangan lewatkan kesempatan tampil elegan dan feminin dengan harga spesial!
+      </p>
+      <a class="inline-block bg-gradient-to-r from-rose-400 to-pink-400 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1" href="#shop">
+       Lihat Promo
+      </a>
+     </div>
+    </div>
+   </section>
+   <!-- Testimoni Pembeli -->
+   <section class="max-w-7xl mx-auto px-6 py-16" id="testimonials">
+    <h2 class="text-3xl font-playfair font-bold text-rose-600 mb-10 text-center">
+     Testimoni Pembeli
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+     <div class="bg-pink-50 rounded-xl p-6 shadow-md flex flex-col items-center text-center">
+      <img alt="Foto pembeli wanita muda tersenyum dengan latar pink soft dan aksen feminin" class="w-24 h-24 rounded-full mb-4 object-cover" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d78ece32-7731-4ff9-9c62-d2da0c1ba376.jpg" width="100"/>
+      <p class="italic text-pink-700 mb-4">
+       "Jahitannya sangat rapi dan desainnya cantik sekali! Saya merasa lebih percaya diri memakai produk Bella Syahira."
+      </p>
+      <h3 class="font-semibold text-rose-600">
+       Nadia S.
+      </h3>
+     </div>
+     <div class="bg-pink-50 rounded-xl p-6 shadow-md flex flex-col items-center text-center">
+      <img alt="Foto pembeli wanita berhijab dengan latar dusty rose dan ekspresi bahagia" class="w-24 h-24 rounded-full mb-4 object-cover" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/76bc8f47-4231-4d8f-9519-a7e614895b11.jpg" width="100"/>
+      <p class="italic text-pink-700 mb-4">
+       "Pelayanan cepat dan produk sesuai ekspektasi. Warna dan bahan sangat elegan dan nyaman dipakai."
+      </p>
+      <h3 class="font-semibold text-rose-600">
+       Rina M.
+      </h3>
+     </div>
+     <div class="bg-pink-50 rounded-xl p-6 shadow-md flex flex-col items-center text-center">
+      <img alt="Foto pembeli wanita muda dengan latar baby pink dan senyum cerah" class="w-24 h-24 rounded-full mb-4 object-cover" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6f1eb560-cfe1-42a0-b415-74261325af71.jpg" width="100"/>
+      <p class="italic text-pink-700 mb-4">
+       "Desainnya aesthetic dan sangat cocok untuk acara formal maupun casual. Saya sangat merekomendasikan Bella Syahira."
+      </p>
+      <h3 class="font-semibold text-rose-600">
+       Dewi P.
+      </h3>
+     </div>
+    </div>
+   </section>
+   <!-- Shop Page -->
+   <section class="max-w-7xl mx-auto px-6 py-16" id="shop">
+    <h2 class="text-3xl font-playfair font-bold text-rose-600 mb-10 text-center">
+     Produk Kami
+    </h2>
+    <div class="flex flex-col md:flex-row gap-8">
+     <!-- Filters -->
+     <aside class="md:w-1/4 bg-pink-50 rounded-xl p-6 shadow-md">
+      <h3 class="font-playfair font-semibold text-rose-600 mb-6 text-lg">
+       Filter Produk
+      </h3>
+      <form>
+       <div class="mb-6">
+        <label class="block mb-2 font-semibold text-pink-700" for="category">
+         Kategori
+        </label>
+        <select class="w-full rounded border border-pink-300 p-2 focus:outline-none focus:ring-2 focus:ring-rose-400" id="category" name="category">
+         <option value="">
+          Semua
+         </option>
+         <option value="kemeja">
+          Kemeja
+         </option>
+         <option value="gaun">
+          Gaun Pengantin
+         </option>
+         <option value="seragam">
+          Seragam
+         </option>
+         <option value="celana">
+          Celana
+         </option>
+         <option value="rok">
+          Rok Wanita
+         </option>
+        </select>
+       </div>
+       <div class="mb-6">
+        <label class="block mb-2 font-semibold text-pink-700" for="price">
+         Harga
+        </label>
+        <select class="w-full rounded border border-pink-300 p-2 focus:outline-none focus:ring-2 focus:ring-rose-400" id="price" name="price">
+         <option value="">
+          Semua
+         </option>
+         <option value="0-100000">
+          0 - 100.000
+         </option>
+         <option value="100001-300000">
+          100.001 - 300.000
+         </option>
+         <option value="300001-500000">
+          300.001 - 500.000
+         </option>
+         <option value="500001">
+          500.001+
+         </option>
+        </select>
+       </div>
+       <div class="mb-6">
+        <label class="block mb-2 font-semibold text-pink-700" for="color">
+         Warna
+        </label>
+        <select class="w-full rounded border border-pink-300 p-2 focus:outline-none focus:ring-2 focus:ring-rose-400" id="color" name="color">
+         <option value="">
+          Semua
+         </option>
+         <option value="soft-pink">
+          Soft Pink
+         </option>
+         <option value="dusty-rose">
+          Dusty Rose
+         </option>
+         <option value="baby-pink">
+          Baby Pink
+         </option>
+         <option value="putih">
+          Putih
+         </option>
+         <option value="rose-gold">
+          Rose Gold
+         </option>
+        </select>
+       </div>
+       <button class="w-full bg-gradient-to-r from-rose-400 to-pink-400 text-white font-semibold py-2 rounded-full hover:shadow-lg transition" type="submit">
+        Terapkan Filter
+       </button>
+      </form>
+     </aside>
+     <!-- Product List -->
+     <div class="md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Product Card 1 -->
+      <div class="bg-pink-50 rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+       <img alt="Kemeja soft pink dengan detail rose gold, bahan mewah dan jahitan rapi" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/63a502bd-4df5-4a36-a995-d50d63729d8e.jpg" width="400"/>
+       <div class="p-6 flex flex-col flex-grow">
+        <h3 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+         Kemeja Soft Pink
+        </h3>
+        <p class="text-pink-700 font-semibold mb-4">
+         Rp 250.000
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+         <i class="fas fa-shopping-cart mr-2">
+         </i>
+         Tambah ke Keranjang
+        </button>
+       </div>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="bg-pink-50 rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+       <img alt="Gaun pengantin dusty rose elegan dengan aksen renda dan payet" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/784bdce8-8882-49dd-15fa-f0d31465926d.jpg" width="400"/>
+       <div class="p-6 flex flex-col flex-grow">
+        <h3 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+         Gaun Pengantin Dusty Rose
+        </h3>
+        <p class="text-pink-700 font-semibold mb-4">
+         Rp 4.500.000
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+         <i class="fas fa-shopping-cart mr-2">
+         </i>
+         Tambah ke Keranjang
+        </button>
+       </div>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="bg-pink-50 rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+       <img alt="Seragam kerja wanita pink soft dengan desain minimalis dan bahan nyaman" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c14c02c9-1492-4ba7-6334-88285be2fab2.jpg" width="400"/>
+       <div class="p-6 flex flex-col flex-grow">
+        <h3 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+         Seragam Kerja Pink Soft
+        </h3>
+        <p class="text-pink-700 font-semibold mb-4">
+         Rp 350.000
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+         <i class="fas fa-shopping-cart mr-2">
+         </i>
+         Tambah ke Keranjang
+        </button>
+       </div>
+      </div>
+      <!-- Product Card 4 -->
+      <div class="bg-pink-50 rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+       <img alt="Celana wanita dusty rose modern dengan potongan elegan dan bahan mewah" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f099e49b-143a-4181-f99e-f082f8b6d300.jpg" width="400"/>
+       <div class="p-6 flex flex-col flex-grow">
+        <h3 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+         Celana Wanita Dusty Rose
+        </h3>
+        <p class="text-pink-700 font-semibold mb-4">
+         Rp 300.000
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+         <i class="fas fa-shopping-cart mr-2">
+         </i>
+         Tambah ke Keranjang
+        </button>
+       </div>
+      </div>
+      <!-- Product Card 5 -->
+      <div class="bg-pink-50 rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+       <img alt="Rok wanita baby pink flowy dengan bahan mewah dan desain feminin" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6b65f34a-fcdf-4ce8-9c69-e7ca55cbf312.jpg" width="400"/>
+       <div class="p-6 flex flex-col flex-grow">
+        <h3 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+         Rok Wanita Baby Pink
+        </h3>
+        <p class="text-pink-700 font-semibold mb-4">
+         Rp 280.000
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+         <i class="fas fa-shopping-cart mr-2">
+         </i>
+         Tambah ke Keranjang
+        </button>
+       </div>
+      </div>
+      <!-- Product Card 6 -->
+      <div class="bg-pink-50 rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+       <img alt="Gaun casual pink mewah dengan aksen rose gold dan bahan lembut" class="w-full h-64 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/324a888d-d998-4c35-2d61-7ddefb81b0a0.jpg" width="400"/>
+       <div class="p-6 flex flex-col flex-grow">
+        <h3 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+         Gaun Casual Pink Mewah
+        </h3>
+        <p class="text-pink-700 font-semibold mb-4">
+         Rp 1.200.000
+        </p>
+        <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+         <i class="fas fa-shopping-cart mr-2">
+         </i>
+         Tambah ke Keranjang
+        </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Detail Produk (contoh satu produk) -->
+   <section class="max-w-7xl mx-auto px-6 py-16" id="product-detail">
+    <h2 class="text-3xl font-playfair font-bold text-rose-600 mb-10 text-center">
+     Detail Produk
+    </h2>
+    <div class="flex flex-col md:flex-row gap-10">
+     <!-- Gambar besar dengan swipe (simulasi dengan 3 gambar) -->
+     <div class="md:w-1/2">
+      <div class="overflow-hidden rounded-xl shadow-lg">
+       <img alt="Gaun pengantin dusty rose elegan tampak depan dengan aksen renda dan payet" class="w-full object-cover rounded-t-xl" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d5feb3f5-27eb-44a5-850c-c36cdc8e0bad.jpg" width="600"/>
+      </div>
+      <div class="flex justify-center gap-4 mt-4">
+       <img alt="Gaun pengantin dusty rose elegan tampak samping dengan aksen renda dan payet" class="w-20 h-20 object-cover rounded-lg cursor-pointer border-2 border-rose-400" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8a135ca2-8ea9-4cfc-9270-fc7b341d5c8c.jpg" width="100"/>
+       <img alt="Gaun pengantin dusty rose elegan tampak belakang dengan aksen renda dan payet" class="w-20 h-20 object-cover rounded-lg cursor-pointer border-2 border-pink-300" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a6d53fa0-9d13-4555-b8e0-e5cd1b3ac5d2.jpg" width="100"/>
+       <img alt="Ilustrasi lucu desain gaun pengantin dusty rose dengan aksen feminin dan bunga" class="w-20 h-20 object-cover rounded-lg cursor-pointer border-2 border-pink-300" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cdaea18d-ebcf-4b7a-ba58-ca052363c999.jpg" width="100"/>
+      </div>
+     </div>
+     <div class="md:w-1/2 flex flex-col">
+      <h3 class="font-playfair font-bold text-2xl text-rose-600 mb-4">
+       Gaun Pengantin Dusty Rose Elegan
+      </h3>
+      <p class="text-pink-700 mb-6">
+       Gaun pengantin dengan warna dusty rose yang mewah, dihiasi renda dan payet yang elegan. Terbuat dari bahan berkualitas tinggi yang nyaman dipakai sepanjang hari.
+      </p>
+      <div class="mb-6">
+       <label class="block font-semibold text-pink-700 mb-2" for="color-variant">
+        Pilih Warna / Varian:
+       </label>
+       <select class="w-full rounded border border-pink-300 p-2 focus:outline-none focus:ring-2 focus:ring-rose-400" id="color-variant">
+        <option value="dusty-rose">
+         Dusty Rose
+        </option>
+        <option value="soft-pink">
+         Soft Pink
+        </option>
+        <option value="baby-pink">
+         Baby Pink
+        </option>
+        <option value="rose-gold">
+         Rose Gold
+        </option>
+       </select>
+      </div>
+      <div class="flex gap-4 mb-6">
+       <button class="flex-1 bg-gradient-to-r from-rose-400 to-pink-400 text-white py-3 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1 flex justify-center items-center gap-2">
+        <i class="fas fa-shopping-cart">
+        </i>
+        Beli Sekarang
+       </button>
+       <button class="flex-1 border border-rose-400 text-rose-600 py-3 rounded-full font-semibold hover:bg-rose-100 transition flex justify-center items-center gap-2">
+        <i class="fas fa-heart">
+        </i>
+        Wishlist
+       </button>
+      </div>
+      <div>
+       <h4 class="font-playfair font-semibold text-rose-600 text-xl mb-4">
+        Review Pengguna
+       </h4>
+       <div class="space-y-4 max-h-48 overflow-y-auto pr-2">
+        <div class="bg-pink-50 rounded-lg p-4 shadow-inner">
+         <div class="flex items-center mb-2">
+          <img alt="Foto pengguna wanita muda tersenyum" class="w-10 h-10 rounded-full object-cover mr-3" height="40" loading="lazy" src="https://storage.googleapis.com/a1aa/image/23425e7d-1705-4511-1dde-c2a17d60466c.jpg" width="40"/>
+          <div>
+           <p class="font-semibold text-rose-600">
+            Sari W.
+           </p>
+           <div class="text-yellow-400">
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star-half-alt">
+            </i>
+           </div>
+          </div>
+         </div>
+         <p class="text-pink-700 text-sm">
+          Gaun ini sangat cantik dan nyaman dipakai. Jahitannya rapi dan sesuai ekspektasi saya.
+         </p>
+        </div>
+        <div class="bg-pink-50 rounded-lg p-4 shadow-inner">
+         <div class="flex items-center mb-2">
+          <img alt="Foto pengguna wanita berhijab tersenyum" class="w-10 h-10 rounded-full object-cover mr-3" height="40" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ac0b41e3-a041-4b8c-2f22-16ee5818f9ce.jpg" width="40"/>
+          <div>
+           <p class="font-semibold text-rose-600">
+            Maya R.
+           </p>
+           <div class="text-yellow-400">
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+           </div>
+          </div>
+         </div>
+         <p class="text-pink-700 text-sm">
+          Warna dan bahan sangat elegan. Saya sangat puas dengan produk ini.
+         </p>
+        </div>
+        <div class="bg-pink-50 rounded-lg p-4 shadow-inner">
+         <div class="flex items-center mb-2">
+          <img alt="Foto pengguna wanita muda tersenyum cerah" class="w-10 h-10 rounded-full object-cover mr-3" height="40" loading="lazy" src="https://storage.googleapis.com/a1aa/image/abbe31d1-8a0f-4930-ea1d-decf89cdbc3c.jpg" width="40"/>
+          <div>
+           <p class="font-semibold text-rose-600">
+            Lia P.
+           </p>
+           <div class="text-yellow-400">
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star">
+            </i>
+            <i class="fas fa-star-half-alt">
+            </i>
+            <i class="far fa-star">
+            </i>
+           </div>
+          </div>
+         </div>
+         <p class="text-pink-700 text-sm">
+          Desainnya aesthetic dan cocok untuk acara formal. Sangat direkomendasikan!
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Rekomendasi Produk Serupa -->
+   <section class="max-w-7xl mx-auto px-6 py-16 bg-pink-50 rounded-xl shadow-md" id="related-products">
+    <h3 class="text-2xl font-playfair font-bold text-rose-600 mb-10 text-center">
+     Rekomendasi Produk Serupa
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+     <div class="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+      <img alt="Gaun casual pink mewah dengan aksen rose gold dan bahan lembut" class="w-full h-56 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/324a888d-d998-4c35-2d61-7ddefb81b0a0.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h4 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+        Gaun Casual Pink Mewah
+       </h4>
+       <p class="text-pink-700 font-semibold mb-4">
+        Rp 1.200.000
+       </p>
+       <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+        <i class="fas fa-shopping-cart mr-2">
+        </i>
+        Tambah ke Keranjang
+       </button>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+      <img alt="Kemeja soft pink dengan detail rose gold, bahan mewah dan jahitan rapi" class="w-full h-56 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/63a502bd-4df5-4a36-a995-d50d63729d8e.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h4 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+        Kemeja Soft Pink
+       </h4>
+       <p class="text-pink-700 font-semibold mb-4">
+        Rp 250.000
+       </p>
+       <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+        <i class="fas fa-shopping-cart mr-2">
+        </i>
+        Tambah ke Keranjang
+       </button>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+      <img alt="Celana wanita dusty rose modern dengan potongan elegan dan bahan mewah" class="w-full h-56 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f099e49b-143a-4181-f99e-f082f8b6d300.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h4 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+        Celana Wanita Dusty Rose
+       </h4>
+       <p class="text-pink-700 font-semibold mb-4">
+        Rp 300.000
+       </p>
+       <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+        <i class="fas fa-shopping-cart mr-2">
+        </i>
+        Tambah ke Keranjang
+       </button>
+      </div>
+     </div>
+     <div class="bg-white rounded-xl shadow-md overflow-hidden group hover:shadow-xl transition cursor-pointer flex flex-col">
+      <img alt="Rok wanita baby pink flowy dengan bahan mewah dan desain feminin" class="w-full h-56 object-cover group-hover:scale-105 transition-transform" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6b65f34a-fcdf-4ce8-9c69-e7ca55cbf312.jpg" width="400"/>
+      <div class="p-4 flex flex-col flex-grow">
+       <h4 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+        Rok Wanita Baby Pink
+       </h4>
+       <p class="text-pink-700 font-semibold mb-4">
+        Rp 280.000
+       </p>
+       <button class="mt-auto bg-gradient-to-r from-rose-400 to-pink-400 text-white py-2 rounded-full font-semibold hover:shadow-lg transition transform hover:-translate-y-1">
+        <i class="fas fa-shopping-cart mr-2">
+        </i>
+        Tambah ke Keranjang
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!-- Tentang Kami -->
+   <section class="max-w-7xl mx-auto px-6 py-16" id="about">
+    <h2 class="text-3xl font-playfair font-bold text-rose-600 mb-10 text-center">
+     Tentang Kami
+    </h2>
+    <div class="flex flex-col md:flex-row gap-10 items-center">
+     <div class="md:w-1/2 text-pink-700">
+      <p class="mb-6 text-lg leading-relaxed">
+       Bella Syahira adalah brand e-commerce yang menyediakan berbagai produk jahit berkualitas tinggi dengan desain feminin, elegan, dan mewah. Kami berkomitmen menemani perempuan tampil percaya diri dengan aman dan terjangkau.
+      </p>
+      <p class="mb-6 text-lg leading-relaxed">
+       Visi kami adalah menjadi pilihan utama perempuan muda yang mengutamakan kualitas dan estetika dalam berbusana. Misi kami adalah menghadirkan produk jahit yang nyaman, stylish, dan sesuai tren dengan sentuhan warna pink yang lembut dan elegan.
+      </p>
+     </div>
+     <div class="md:w-1/2 grid grid-cols-2 gap-6">
+      <img alt="Foto tim Bella Syahira, wanita muda berbusana pink elegan, tersenyum di studio dengan latar putih" class="rounded-xl shadow-lg object-cover w-full h-full" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1dc8a2af-837b-4f7c-4ab4-c7f9f30b26c1.jpg" width="300"/>
+      <img alt="Foto designer Bella Syahira sedang merancang baju dengan latar studio jahit dan aksen pink" class="rounded-xl shadow-lg object-cover w-full h-full" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4726574c-6f55-4d2b-ba2b-b3f4b3935856.jpg" width="300"/>
+      <img alt="Ilustrasi lucu model baju pink feminin dengan aksen bunga dan pita" class="rounded-xl shadow-lg object-cover w-full h-full" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/68bf33cf-9c66-4cd3-03ca-c4a58d6ce9f6.jpg" width="300"/>
+      <img alt="Ilustrasi desain baju pink elegan dengan aksen gold dan renda" class="rounded-xl shadow-lg object-cover w-full h-full" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6bd6156a-4289-426c-3c42-27e54e9e4b55.jpg" width="300"/>
+     </div>
+    </div>
+   </section>
+   <!-- Blog -->
+   <section class="max-w-7xl mx-auto px-6 py-16 bg-pink-50 rounded-xl shadow-md" id="blog">
+    <h2 class="text-3xl font-playfair font-bold text-rose-600 mb-10 text-center">
+     Blog &amp; Tips
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+     <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer flex flex-col">
+      <img alt="Ilustrasi tips makeup natural untuk acara formal dengan warna pink dan aksen gold" class="w-full h-48 object-cover" height="250" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1e38155b-9632-4b05-91f4-2ec78770ecce.jpg" width="400"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+        Tips Makeup Natural untuk Acara Formal
+       </h3>
+       <p class="text-pink-700 flex-grow text-sm mb-4">
+        Pelajari cara makeup natural yang cocok untuk melengkapi penampilan eleganmu di acara formal dengan sentuhan warna pink dan gold.
+       </p>
+       <a class="text-rose-500 font-semibold hover:underline self-start" href="#blog">
+        Baca Selengkapnya →
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer flex flex-col">
+      <img alt="Ilustrasi review gaun pengantin dusty rose dengan aksen renda dan payet" class="w-full h-48 object-cover" height="250" loading="lazy" src="https://storage.googleapis.com/a1aa/image/13cc9f37-4011-4dbd-698e-90ebda145f75.jpg" width="400"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+        Review Gaun Pengantin Dusty Rose
+       </h3>
+       <p class="text-pink-700 flex-grow text-sm mb-4">
+        Simak review lengkap gaun pengantin dusty rose kami yang elegan dan nyaman dipakai sepanjang hari.
+       </p>
+       <a class="text-rose-500 font-semibold hover:underline self-start" href="#blog">
+        Baca Selengkapnya →
+       </a>
+      </div>
+     </article>
+     <article class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition cursor-pointer flex flex-col">
+      <img alt="Ilustrasi tutorial look of the day dengan gaun pink dan aksen bunga" class="w-full h-48 object-cover" height="250" loading="lazy" src="https://storage.googleapis.com/a1aa/image/87863543-550c-42ab-49d6-7d5cf7dd1212.jpg" width="400"/>
+      <div class="p-6 flex flex-col flex-grow">
+       <h3 class="font-playfair font-semibold text-rose-600 text-lg mb-2">
+        Tutorial Look Of The Day dengan Gaun Pink
+       </h3>
+       <p class="text-pink-700 flex-grow text-sm mb-4">
+        Ikuti tutorial mudah untuk tampil cantik dan feminin dengan gaun pink favoritmu setiap hari.
+       </p>
+       <a class="text-rose-500 font-semibold hover:underline self-start" href="#blog">
+        Baca Selengkapnya →
+       </a>
+      </div>
+     </article>
+    </div>
+   </section>
+   <!-- Kontak -->
+   <section class="max-w-7xl mx-auto px-6 py-16" id="contact">
+    <h2 class="text-3xl font-playfair font-bold text-rose-600 mb-10 text-center">
+     Kontak Kami
+    </h2>
+    <div class="flex flex-col md:flex-row gap-10">
+     <form action="#" class="md:w-1/2 bg-pink-50 rounded-xl p-8 shadow-md" method="POST">
+      <div class="mb-6">
+       <label class="block mb-2 font-semibold text-pink-700" for="name">
+        Nama
+       </label>
+       <input class="w-full rounded border border-pink-300 p-3 focus:outline-none focus:ring-2 focus:ring-rose-400" id="name" name="name" placeholder="Nama lengkap Anda" required="" type="text"/>
+      </div>
+      <div class="mb-6">
+       <label class="block mb-2 font-semibold text-pink-700" for="email">
+        Email
+       </label>
+       <input class="w-full rounded border border-pink-300 p-3 focus:outline-none focus:ring-2 focus:ring-rose-400" id="email" name="email" placeholder="email@domain.com" required="" type="email"/>
+      </div>
+      <div class="mb-6">
+       <label class="block mb-2 font-semibold text-pink-700" for="message">
+        Pesan
+       </label>
+       <textarea class="w-full rounded border border-pink-300 p-3 focus:outline-none focus:ring-2 focus:ring-rose-400" id="message" name="message" placeholder="Tulis pesan Anda di sini" required="" rows="5"></textarea>
+      </div>
+      <button class="w-full bg-gradient-to-r from-rose-400 to-pink-400 text-white font-semibold py-3 rounded-full hover:shadow-lg transition" type="submit">
+       Kirim Pesan
+      </button>
+     </form>
+     <div class="md:w-1/2 text-pink-700 flex flex-col justify-center space-y-6">
+      <div class="flex items-center gap-4">
+       <i class="fas fa-envelope fa-lg text-rose-600">
+       </i>
+       <a class="hover:underline" href="mailto:cs@bellasyahira.com">
+        cs@bellasyahira.com
+       </a>
+      </div>
+      <div class="flex items-center gap-4">
+       <i class="fab fa-whatsapp fa-lg text-rose-600">
+       </i>
+       <a class="hover:underline" href="https://wa.me/6281234567890" rel="noopener" target="_blank">
+        +62 812-3456-7890
+       </a>
+      </div>
+      <div class="flex items-center gap-4">
+       <i class="fab fa-instagram fa-lg text-rose-600">
+       </i>
+       <a class="hover:underline" href="https://instagram.com/bellasyahira" rel="noopener" target="_blank">
+        @bellasyahira
+       </a>
+      </div>
+      <div class="flex items-center gap-4">
+       <i class="fab fa-tiktok fa-lg text-rose-600">
+       </i>
+       <a class="hover:underline" href="https://tiktok.com/@bellasyahira" rel="noopener" target="_blank">
+        @bellasyahira
+       </a>
+      </div>
+      <address class="not-italic">
+       <p>
+        Jl. Mawar No. 123, Jakarta Selatan, Indonesia
+       </p>
+      </address>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-pink-200 via-pink-300 to-pink-200 text-pink-700 py-8 mt-16">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    <p class="text-sm">
+     © 2024 Bella Syahira. All rights reserved.
+    </p>
+    <div class="flex space-x-6 mt-4 md:mt-0">
+     <a aria-label="Instagram" class="hover:text-rose-600 transition" href="https://instagram.com/bellasyahira" rel="noopener" target="_blank">
+      <i class="fab fa-instagram fa-lg">
+      </i>
+     </a>
+     <a aria-label="TikTok" class="hover:text-rose-600 transition" href="https://tiktok.com/@bellasyahira" rel="noopener" target="_blank">
+      <i class="fab fa-tiktok fa-lg">
+      </i>
+     </a>
+     <a aria-label="Email" class="hover:text-rose-600 transition" href="mailto:cs@bellasyahira.com">
+      <i class="fas fa-envelope fa-lg">
+      </i>
+     </a>
+     <a aria-label="WhatsApp" class="hover:text-rose-600 transition" href="https://wa.me/6281234567890" rel="noopener" target="_blank">
+      <i class="fab fa-whatsapp fa-lg">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
